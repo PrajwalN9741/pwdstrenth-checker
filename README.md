@@ -1,0 +1,1 @@
+# pwdstrenth-checker
