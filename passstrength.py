@@ -30,30 +30,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-"""
-Password Strength Checker
-This is a simple Python program that checks the strength of a password based on several criteria including length, use of uppercase and lowercase letters, digits, and special characters.
-
-Features
-Checks if the password length is at least 8 characters.
-Verifies the presence of digits, uppercase letters, lowercase letters, and special characters.
-Provides a strength rating: Very Weak, Weak, Moderate, Strong, or Very Strong.
-Usage
-Clone or download this repository.
-
-Run the script using Python 3:
-
-
-python passstrength.py
-Enter the password you want to check when prompted.
-
-The program will output the strength of the password.
-
-Example
-
-Enter a password to check its strength: MyP@ssw0rd123
-Password strength: Very Strong
-Requirements
-Python 3.x
-License
-This project is licensed under the MIT License."""
+    
