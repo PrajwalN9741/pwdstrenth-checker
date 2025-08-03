@@ -32,7 +32,7 @@ This project is a simple C-based tool designed to evaluate the strength of user-
 1. **Install Git (if not installed)**:
    ```bash
    sudo apt-get install git
-````
+
 
 2. **Clone the Repository**:
 
@@ -54,7 +54,6 @@ This project is a simple C-based tool designed to evaluate the strength of user-
    ./strength_checker
    ```
 
----
 
 ## 🧠 How It Works
 
@@ -91,9 +90,8 @@ This project is a simple C-based tool designed to evaluate the strength of user-
 
 This project is meant for educational and learning purposes. It is not intended for use in real-world security systems or applications.
 
-```
+
 
 ---
 
 Would you like a badge-based GitHub header, or conversion of this project to Python or web-based UI?
-```
