@@ -24,10 +24,12 @@ def check_password_strength(password):
     return strength
 
 def main():
-    password = input("Enter a password to check its strength: ")
+   
+    password = "MySecure@123"
+    
     strength = check_password_strength(password)
+    print(f"Password: {password}")
     print(f"Password strength: {strength}")
 
 if __name__ == "__main__":
     main()
-    
