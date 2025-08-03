@@ -1,6 +1,4 @@
 
-
-````markdown
 # Password Strength Checker 🔐
 
 This project is a simple C-based tool designed to evaluate the strength of user-entered passwords. It analyzes various characteristics of the password and provides feedback indicating whether it is Weak, Moderate, or Strong.
