@@ -80,4 +80,4 @@ This project is intended for learning and practicing Python, regular expressions
 
 
 Let me know if you want me to push this directly to your repo as a pull request (or help you rename the repo to fix the typo: `pwdstrenth` → `pwdstrength`).
-```
+
