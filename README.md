@@ -1,97 +1,83 @@
 
-# Password Strength Checker 🔐
+# 🔐 Password Strength Checker
 
-This project is a simple C-based tool designed to evaluate the strength of user-entered passwords. It analyzes various characteristics of the password and provides feedback indicating whether it is Weak, Moderate, or Strong.
+A simple command-line tool to evaluate the strength of passwords based on various criteria such as length, use of uppercase/lowercase letters, digits, and special characters.
 
 ---
 
-## 🚀 Features
+## 📋 Features
 
-- Evaluates password strength based on:
-  - Password length
-  - Use of uppercase and lowercase letters
-  - Presence of numbers
-  - Inclusion of special characters
-- Categorizes password as:
+- Checks for:
+  - ✅ Minimum length
+  - ✅ Uppercase letters
+  - ✅ Lowercase letters
+  - ✅ Numbers
+  - ✅ Special characters
+- Rates the password as:
+  - Very Weak
   - Weak
   - Moderate
   - Strong
-- Easy to compile and run on Linux systems
+  - Very Strong
 
 ---
 
-## 🧑‍💻 Getting Started
+## 🛠️ Requirements
 
-### 🔧 Prerequisites
+- Python 3.x  
+  *(No external libraries needed – uses built-in `re` module)*
 
-- GCC (GNU Compiler Collection)
-- Git (for cloning the repository)
+---
 
-### 🐧 Installation on Linux
+## 💻 How to Run (Linux/macOS)
 
-1. **Install Git (if not installed)**:
+1. Clone the repository:
    ```bash
-   sudo apt-get install git
+   git clone https://github.com/PrajwalN9741/pwdstrenth-checker.git
+   cd pwdstrenth-checker
 
 
-2. **Clone the Repository**:
+2. Run the Python script:
 
    ```bash
-   git clone https://github.com/gasanthosh/Pass_strength_check.git
-   cd Pass_strength_check
+   python3 password_checker.py
    ```
 
-3. **Compile the Program**:
+---
 
-   ```bash
-   gcc psc.c -o strength_checker
-   ```
+## 🧪 Sample Output
 
-4. **Run the Program**:
+```
+Password: admin123
+Password strength: Weak
+```
 
-   ```bash
-   chmod +x strength_checker
-   ./strength_checker
-   ```
-
-
-## 🧠 How It Works
-
-* The program prompts the user to input a password.
-* It then checks the password character by character to identify:
-
-  * Lowercase and uppercase letters
-  * Digits
-  * Special symbols
-* A score is assigned based on these characteristics.
-* The final score determines the password strength and displays it to the user.
+```
+Password: Admin@123
+Password strength: Very Strong
+```
 
 ---
 
-## 📋 Example Outputs
+## ✏️ Customization
 
-| Input            | Output               |
-| ---------------- | -------------------- |
-| `systemadmin`    | Password is Weak     |
-| `systemADMIN`    | Password is Moderate |
-| `admin@System_1` | Password is Strong   |
+If you want to test a custom password directly (without user input), edit the `main()` function in `password_checker.py` like this:
 
----
+```python
+def main():
+    password = "YourPasswordHere"
+    strength = check_password_strength(password)
+    print(f"Password: {password}")
+    print(f"Password strength: {strength}")
+```
 
-## 🔎 Notes
 
-* Default compiled output file is `a.out` unless renamed.
-* You can adjust the evaluation logic inside `psc.c` based on custom rules.
-* This tool is ideal for beginners learning C and basic security practices.
+## 📚 Educational Use
 
----
-
-## 👨‍🏫 Educational Use Only
-
-This project is meant for educational and learning purposes. It is not intended for use in real-world security systems or applications.
+This project is intended for learning and practicing Python, regular expressions, and basic security principles. Not recommended for use in production systems.
 
 
 
----
 
-Would you like a badge-based GitHub header, or conversion of this project to Python or web-based UI?
+Let me know if you want me to push this directly to your repo as a pull request (or help you rename the repo to fix the typo: `pwdstrenth` → `pwdstrength`).
+```
